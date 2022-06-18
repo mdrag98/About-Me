@@ -29,11 +29,27 @@ li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
-    body { background:url(pagebackground.png) no-repeat; background-size: cover; background-color: black;}
+body {
+  width: 100vw;
+  height: 200vh;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("pagebackground.png");
+  background-color: #0e1b47;
+  background-size: cover;
+  z-index: -1; /* added */
+}
     p{
         color: white;
         font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size: 97%;
+        font-size: 25px;
         padding: 11px;
         border:2px solid powderblue;
         text-align: center;
@@ -42,7 +58,7 @@ li a:hover:not(.active) {
         max-height: auto;
         position: relative;
         top:37px;
-        left:19.3%;
+        left:20%;
 
     }
     h1{
@@ -54,7 +70,7 @@ li a:hover:not(.active) {
         text-align: center;
     }
     </style>
-    <title>Personal Info</title>
+    <title>Project Idea</title>
     <body>
       <ul>
         <li><a href="file:///C:/Users/natyh/Documents/GitHub/About-Me/Personal-Info.html">Personal Info</a></li>

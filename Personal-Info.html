@@ -30,20 +30,36 @@ li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
-    body { background:url(pagebackground.png) no-repeat; background-size: cover; background-color: black;}
+body {
+  width: 100vw;
+  height: 200vh;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("pagebackground.png");
+  background-size: cover;
+  z-index: -1; /* added */
+}
+    body { background:url(pagebackground.png) no-repeat; background-size: cover; background-color: #0e1b47;}
     p{
         color: white;
         font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size: 200%;
-        padding: 23px;
+        font-size: 180%;
+        padding: 10px;
         border:2px solid powderblue;
         text-align: center;
         word-wrap: break-word;
         max-width: 1080px;
         max-height: auto;
-        position: relative;
-        bottom:37%;
-        left:21%;
+        position:relative;
+        bottom:auto;
+        left:20%
 
     }
     h1{
@@ -72,6 +88,8 @@ li a:hover:not(.active) {
         <p>My name is Nathen, 23 years of age, born and raised in the Australia and lived in a town in NSW called Campbelltown for just about my entire life, and likely will for a long time to come.</p>
         <p> my family has a Hispanic heritage, originating from Uruguay and migrating to Australia, despite this I grew up very disconnected from my Spanish culture, not knowing a word of the language or next to nothing about the culture surrounding the country.</p>
         <p>I graduated high school in 2015 and since then ive gone job to job not finding anything that I found enjoyment in doing, until I decided to push to build foundations that I can really start to create a future upon by furthering my education to get qualifications in a field which I believe I would really enjoy.</p>
-        <p>A fun although nerdy fact about me is that with the help of YouTube I taught myself how to consistently solve a Rubik’s cube in less than a minute, I often used this a party trick to get people to take a shot when they didn’t believe me.</p>
+        <p>A fun although nerdy fact about me is that with the help of YouTube I taught myself how to consistently solve a Rubik’s cube in less than a minute, I often used this a party trick to get people to take a shot when they didn’t believe me. I have a beautiful sun conure called papaya and i spend majority my time outside riding my motorbike.</p>
+        <img src="bird.jpg" style="height: 25%; position:relative; left: 26%;">
+        <img src="bike.jpg" style="height: 25%; position:relative; left: 26%;">
     </body>
     </html>
